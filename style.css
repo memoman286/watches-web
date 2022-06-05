@@ -1,0 +1,299 @@
+html {
+    height: 1000px;
+}
+
+
+/* ===============
+   1. nav bar
+================ */
+
+.fa-search {
+    color: rgb(185, 47, 47);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.fa-search:hover {
+    color: aquamarine;
+}
+
+* {
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+a:hover {
+    color: aqua;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+
+.logo {
+    background: rgb(218, 102, 218);
+    color: black;
+}
+
+.down {
+    color: blueviolet;
+}
+
+.main1 {
+    background-color: black;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 370px;
+    visibility: hidden;
+}
+
+.down:hover+.main1 {
+    visibility: visible;
+}
+
+/* ===============
+   1. photo and paragraph
+================ */
+
+
+.photo {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.mem {
+    width: 70px;
+    color: rgb(76, 192, 115);
+    position: relative;
+    bottom: 550px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.mem2 {
+    width: 350px;
+    color: rgb(18, 81, 122);
+    position: relative;
+    bottom: 450px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.mem3 {
+    width: 350px;
+    color: rgb(80, 134, 170);
+    position: relative;
+    bottom: 400px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.mem4 {
+    width: 340px;
+    color: black;
+    position: absolute;
+    left: 500px;
+    bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mem4:hover {
+    color: aliceblue;
+}
+
+
+/* ===============
+   1. main paragraph in down photo
+================ */
+
+
+.teet1 {
+    position: relative;
+    bottom: 200px;
+    left: 550px;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.teet2 {
+    position: relative;
+    bottom: 180px;
+    left: 500px;
+    color: rgb(32, 8, 8);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.teet3 {
+    position: relative;
+    left: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.teet3:hover {
+    color: violet;
+}
+
+.flex {
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+/* ===============
+   1. our watches
+================ */
+
+.rolex {
+    border-radius: 50%;
+    width: 160px;
+}
+
+.r2 {
+    color: rgb(141, 26, 26);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.r3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(44, 39, 39);
+
+}
+
+.divition1 {
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+.divition2 {
+    margin-left: 30px;
+}
+
+/* ===============
+   1. animation
+================ */
+
+.rol,
+.jac,
+.chro,
+.omg,
+.tissot {
+    color: black;
+}
+
+.oloo {
+    position: relative;
+    bottom: 100px;
+    background: linear-gradient(#885858, rgb(0, 0, 10));
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+
+ul:hover li a{
+visibility: hidden;
+
+
+}
+
+
+ul li {
+    list-style: none;
+    margin: 70px 0;
+}
+
+ul li a {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(42, 70, 36);
+    border-radius: 20px;
+transition: 0.8s;
+position: relative;
+z-index: 10;
+}
+ul li a:hover{
+    transform: scale(1.5);
+visibility: visible;
+}
+ul li::after{
+    content: attr(data-text);
+color: aqua;
+position: absolute;
+left: 50%;
+top: 50%;
+transform:translate(-50%,-50%);
+font-size: 20px;
+font-weight: 500;
+opacity: 0;
+pointer-events: none;
+letter-spacing: 40px;
+transition: 0.8s;
+}
+
+ul li:hover:after{
+    opacity: 0.5;
+letter-spacing: 5px;
+
+}
+
+ul li ::before{
+    content: '';
+    width: 50px;
+height: 50px;
+background: rgb(8, 20, 20);
+position:absolute;
+left: 50%;
+top: 50%;
+transform:translate(-50%,70%);
+border-radius: 50%;
+box-shadow: 0 0 80px rgb(51, 255, 0);
+opacity: 0;
+transition: 0.5s;
+}
+ul li:hover ::before{
+
+    opacity: 0.6;
+    width: 80px;
+
+}
+/* ===============
+   1. our work
+================ */
+
+
